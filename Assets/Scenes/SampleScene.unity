@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 610897668}
   - component: {fileID: 610897674}
   - component: {fileID: 610897675}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,6 +334,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moaveSpeed: 3
   jumpPower: 12
+  groundMask_:
+    serializedVersion: 2
+    m_Bits: 128
+  groundDist_: 0.53
 --- !u!114 &610897671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,7 +419,7 @@ Transform:
   m_GameObject: {fileID: 610897667}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.125, y: -0.506, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -592,7 +596,7 @@ GameObject:
   - component: {fileID: 2023643077}
   - component: {fileID: 2023643076}
   - component: {fileID: 2023643078}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
