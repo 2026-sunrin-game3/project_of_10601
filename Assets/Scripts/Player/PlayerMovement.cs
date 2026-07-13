@@ -3,17 +3,20 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rigid;
-    public float moaveSpeed = 3f, jumpPower = 12f;
+    public PlayerStat Stat;
+    public float jumpPower = 12f;
     [SerializeField] LayerMask groundMask_;
     [SerializeField] float groundDist_ = 0.5f;
 
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
+        Stat = GetComponent<PlayerStat>();
     }
 
     public void move(Vector2 axis)
     {
+        float moaveSpeed = Stat.GetResultValue("moveSpeed");
         transform.Translate(axis.normalized * moaveSpeed * Time.deltaTime);
     }
 

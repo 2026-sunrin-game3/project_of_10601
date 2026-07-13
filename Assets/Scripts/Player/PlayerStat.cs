@@ -25,6 +25,7 @@ public class PlayerStat : MonoBehaviour
         public float value;
         public MathType mathType;
     }
+    [System.Serializable]
     struct StatValue
     {
         public string Key;
@@ -43,13 +44,12 @@ public class PlayerStat : MonoBehaviour
         new StatValue() { Key = "atkSpeed", Value = 0},
         new StatValue() { Key = "moveSpeed", Value = 0}
     };
-    private IEnumerable<StatValue> defaultState;
-    private object basestat;
+   
 
     //공격력 방어력, 가하는 피해 증가, 치명타 확률 / 피해 증가, 공속, 이속
     void Start()
     {
-        foreach (StatValue val in defaultState)
+        foreach (StatValue val in defaultStat)
         {
             basestate[val.Key] = val.Value;
             Calc(val.Key);
@@ -57,7 +57,7 @@ public class PlayerStat : MonoBehaviour
         
     }
 
-    public float GetREsultValue(string key)
+    public float GetResultValue(string key)
     {
         return resultValue[key];
     }
