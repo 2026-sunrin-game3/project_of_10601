@@ -1,21 +1,24 @@
 using UnityEngine;
 
-[RequireComponent(typeof(PlayerInput))]
 [RequireComponent(typeof(PlayerMovement))]
+[RequireComponent(typeof(PlayerInput))]
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
-    public PlayerInput input;
     public PlayerMovement movement;
-
+    public PlayerAnimator animator;
+    public PlayerInput input;
     void Start()
     {
-        input = GetComponent<PlayerInput>();
         movement = GetComponent<PlayerMovement>();
+        input = GetComponent<PlayerInput>();
+        animator = GetComponent<PlayerAnimator>();
     }
 
     void Update()
     {
         movement.move(input.axis);
+
+        animator.SetMoving(input.HasAxis(), input.axis);
     }
 }

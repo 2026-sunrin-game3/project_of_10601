@@ -1,0 +1,498 @@
+fileFormatVersion: 2
+guid: 596b06633484132478978063e30cb5a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -735348699013514397
+    second: Explosive_Strike_0
+  - first:
+      213: 7177049376562605671
+    second: Explosive_Strike_1
+  - first:
+      213: 3335883492763993210
+    second: Explosive_Strike_2
+  - first:
+      213: 8691475154721134857
+    second: Explosive_Strike_3
+  - first:
+      213: -763767654377084278
+    second: Explosive_Strike_4
+  - first:
+      213: 8110689273177843524
+    second: Explosive_Strike_5
+  - first:
+      213: 8042006940933956006
+    second: Explosive_Strike_6
+  - first:
+      213: -5122491780882032806
+    second: Explosive_Strike_7
+  - first:
+      213: 5673544179828971406
+    second: Explosive_Strike_8
+  - first:
+      213: 162012761915198515
+    second: Explosive_Strike_9
+  - first:
+      213: 3277758292966808529
+    second: Explosive_Strike_10
+  - first:
+      213: -1382256175717115644
+    second: Explosive_Strike_11
+  - first:
+      213: -6230992944269876453
+    second: Explosive_Strike_12
+  - first:
+      213: -6738978820237747847
+    second: Explosive_Strike_13
+  - first:
+      213: -101590434665309783
+    second: Explosive_Strike_14
+  - first:
+      213: -3112907181067671596
+    second: Explosive_Strike_15
+  - first:
+      213: 1700525378884509039
+    second: Explosive_Strike_16
+  - first:
+      213: -8038201506863015017
+    second: Explosive_Strike_17
+  - first:
+      213: 978284081817379605
+    second: Explosive_Strike_18
+  - first:
+      213: -184135940552150533
+    second: Explosive_Strike_19
+  - first:
+      213: 656704495481858402
+    second: Explosive_Strike_20
+  - first:
+      213: 8156610925822751758
+    second: Explosive_Strike_21
+  - first:
+      213: 5450623181353797571
+    second: Explosive_Strike_22
+  - first:
+      213: 5549236131394844642
+    second: Explosive_Strike_23
+  - first:
+      213: 6113941212883935468
+    second: Explosive_Strike_24
+  - first:
+      213: 3251349422175622699
+    second: Explosive_Strike_25
+  - first:
+      213: 2059489385708788107
+    second: Explosive_Strike_26
+  - first:
+      213: -4809995711592200802
+    second: Explosive_Strike_27
+  - first:
+      213: 7291984641656080479
+    second: Explosive_Strike_28
+  - first:
+      213: -2303717097012673787
+    second: Explosive_Strike_29
+  - first:
+      213: 6209558628786476904
+    second: Explosive_Strike_30
+  - first:
+      213: -1406816203430755570
+    second: Explosive_Strike_31
+  - first:
+      213: -8844519580304622545
+    second: Explosive_Strike_32
+  - first:
+      213: -4046142395320513699
+    second: Explosive_Strike_33
+  - first:
+      213: 5331454794531851677
+    second: Explosive_Strike_34
+  - first:
+      213: 798926976127174148
+    second: Explosive_Strike_35
+  - first:
+      213: 1559453017529088056
+    second: Explosive_Strike_36
+  - first:
+      213: -4148636570306914130
+    second: Explosive_Strike_37
+  - first:
+      213: -2454681776013627369
+    second: Explosive_Strike_38
+  - first:
+      213: -6993350945303601154
+    second: Explosive_Strike_39
+  - first:
+      213: -5071513134715079889
+    second: Explosive_Strike_40
+  - first:
+      213: 5941218641820550457
+    second: Explosive_Strike_41
+  - first:
+      213: -8881213155595902000
+    second: Explosive_Strike_42
+  - first:
+      213: -4725543595918924901
+    second: Explosive_Strike_43
+  - first:
+      213: 7416710207181326404
+    second: Explosive_Strike_44
+  - first:
+      213: -2633504691448716316
+    second: Explosive_Strike_45
+  - first:
+      213: 5071943367433790098
+    second: Explosive_Strike_46
+  - first:
+      213: 7270762996235496660
+    second: Explosive_Strike_47
+  - first:
+      213: 4392875289799132915
+    second: Explosive_Strike_48
+  - first:
+      213: 6756025050122904027
+    second: Explosive_Strike_49
+  - first:
+      213: 1965052895872208031
+    second: Explosive_Strike_50
+  - first:
+      213: -6134073231682630544
+    second: Explosive_Strike_51
+  - first:
+      213: -5876891467537367912
+    second: Explosive_Strike_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Explosive_Strike_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36bf04911448bc5f0800000000000000
+      internalID: -735348699013514397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosive_Strike_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ee371e1600a9360800000000000000
+      internalID: 7177049376562605671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosive_Strike_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a748946cc507b4e20800000000000000
+      internalID: 3335883492763993210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosive_Strike_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90959439a925e9870800000000000000
+      internalID: 8691475154721134857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosive_Strike_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8aabed6d5d8665f0800000000000000
+      internalID: -763767654377084278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosive_Strike_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4472653fbe4fe8070800000000000000
+      internalID: 8110689273177843524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosive_Strike_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1289354b2fa9f60800000000000000
+      internalID: 8042006940933956006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosive_Strike_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a571bab8dd049e8b0800000000000000
+      internalID: -5122491780882032806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosive_Strike_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e87d0303f5a7cbe40800000000000000
+      internalID: 5673544179828971406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 333888774f6d88c45ab130b7e3065117
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Explosive_Strike_0: -735348699013514397
+      Explosive_Strike_1: 7177049376562605671
+      Explosive_Strike_2: 3335883492763993210
+      Explosive_Strike_3: 8691475154721134857
+      Explosive_Strike_4: -763767654377084278
+      Explosive_Strike_5: 8110689273177843524
+      Explosive_Strike_6: 8042006940933956006
+      Explosive_Strike_7: -5122491780882032806
+      Explosive_Strike_8: 5673544179828971406
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -66,7 +66,7 @@ public class EntityHealth : MonoBehaviour
 
         if (attacker != null)
         {
-            critper = attacker.stat.GetResultValue("critper");
+            critper = attacker.stat.GetResultValue("critPer");
             critMul = attacker.stat.GetResultValue("critMul"); 
             inc = attacker.stat.GetResultValue("increaseDamage");
             foreach (var c in attacker.onGiveDamageEv)
