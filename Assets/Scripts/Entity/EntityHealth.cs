@@ -29,6 +29,11 @@ public class EntityHealth : MonoBehaviour
         ResetHealth();
 
     }
+    
+    void OnDeath(EntityHealth.Context ctx)
+    {
+       Destroy(gameObject);
+    }
 
     public void ResetHealth()
     {

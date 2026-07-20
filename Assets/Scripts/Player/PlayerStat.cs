@@ -57,10 +57,14 @@ public class PlayerStat : MonoBehaviour
     public float Calc(string key)
     {
         float value = baseValue[key];
-        float increase = 120;
+        float increase = 100;
 
         foreach (Buf buf in bufs)
         {
+            if (buf.Key != key)
+            {
+                continue;
+            }
             switch (buf.mathType)
             {
                 case MathType.Increase:

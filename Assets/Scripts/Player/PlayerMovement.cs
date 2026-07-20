@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(axis.normalized * moaveSpeed * Time.deltaTime);
     }
 
-    public void Setvelocity(Vector2 dir)
+    public void SetVelocity(Vector2 dir)
     {
         rigid.linearVelocity = dir;
     }
@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(OnGround())
         {
-            Setvelocity(Vector2.up * jumpPower);
+            SetVelocity(Vector2.up * jumpPower);
 
             return true;
         }
