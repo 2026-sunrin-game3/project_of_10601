@@ -27,10 +27,16 @@ public class PlayerInput : MonoBehaviour
         if (movement.Jump())
             animator.Jump();
     }
-    public void OnAttack()
+    public void OnBasicAttack()
     {
-        battle.Attack();
-        animator.Play("Attack1");
+        if (battle.BasicAttack((int)animator.direction))
+            animator.Play("Attack1");
+    }
+
+    public void OnLaunchAttack()
+    {
+        if (battle.LaunchAttack((int)animator.direction))
+            animator.PlayLaunchAttack();
     }
 
     public void OnDash(){

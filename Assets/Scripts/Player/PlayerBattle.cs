@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.InputSystem;
-using UnityEngine.UIElements.Experimental;
+using System.Collections.Generic;
+using UnityEngine.UI;
 
 [System.Serializable]
    
@@ -24,9 +24,20 @@ public class PlayerBattle : MonoBehaviour
     
     public AttackRange defaultAttack;
 
+    [Header("Launch Attack")]
+    [SerializeField] AttackRange launchAttackRange = new AttackRange
+    {
+        offset = new Vector2(1f, 0.7f),
+        size = new Vector2(1.3f, 1.6f),
+        drawGizmos = true
+    };
+    [SerializeField] float launchPower = 10f;
+    [SerializeField] float launchAttackCooldown = 0.5f;
+
     [SerializeField] LayerMask enermymask;
     [SerializeField] float dashPower, dashTime;
     [SerializeField] DamageIndicator indicator;
+    [SerializeField] Slider healthbar;
     void Start()
     {
         health = GetComponent<EntityHealth>();
@@ -50,6 +61,7 @@ public class PlayerBattle : MonoBehaviour
 
     void Update()
     {
+        healthbar.value = health.health / health.maxHealth;
         if (atkCool > 0)
         {
             atkCool -= Time.deltaTime * (1 + stat.GetResultValue("atkSpeed") / 100);
@@ -109,21 +121,63 @@ public class PlayerBattle : MonoBehaviour
         stat.Calc("atkSpeed");
     }
 
-    public void Attack()
+    public bool BasicAttack(int direction)
     {
-
         if (atkCool > 0)
-            return;
+            return false;
+
         atkCool = 0.5f;
-        var col = Physics2D.OverlapBoxAll((Vector2)transform.position + defaultAttack.offset, defaultAttack.size, 0, enermymask);
-        foreach(var target in col)
+        direction = direction == 0 ? 1 : (int)Mathf.Sign(direction);
+
+        Vector2 attackOffset = defaultAttack.offset;
+        attackOffset.x *= direction;
+        Vector2 attackCenter = (Vector2)transform.position + attackOffset;
+        Collider2D[] targets = Physics2D.OverlapBoxAll(attackCenter, defaultAttack.size, 0f, enermymask);
+        HashSet<EntityHealth> damagedTargets = new HashSet<EntityHealth>();
+
+        foreach (Collider2D target in targets)
         {
-            EntityHealth hp = target.GetComponent<EntityHealth>();
-            if (hp != null)
+            EntityHealth hp = target.GetComponentInParent<EntityHealth>();
+            if (hp != null && damagedTargets.Add(hp))
             {
                 hp.GetDamage(stat.GetResultValue("attackDamage"), health);
             }
         }
+
+        return true;
+    }
+
+    public bool LaunchAttack(int direction)
+    {
+        if (atkCool > 0)
+            return false;
+
+        atkCool = launchAttackCooldown;
+        direction = direction == 0 ? 1 : (int)Mathf.Sign(direction);
+
+        Vector2 attackOffset = launchAttackRange.offset;
+        attackOffset.x *= direction;
+        Vector2 attackCenter = (Vector2)transform.position + attackOffset;
+        Collider2D[] targets = Physics2D.OverlapBoxAll(
+            attackCenter,
+            launchAttackRange.size,
+            0f,
+            enermymask
+        );
+        HashSet<Rigidbody2D> launchedTargets = new HashSet<Rigidbody2D>();
+
+        foreach (Collider2D target in targets)
+        {
+            Rigidbody2D targetRigid = target.GetComponentInParent<Rigidbody2D>();
+            if (targetRigid != null && launchedTargets.Add(targetRigid))
+            {
+                Vector2 velocity = targetRigid.linearVelocity;
+                velocity.y = launchPower;
+                targetRigid.linearVelocity = velocity;
+            }
+        }
+
+        return true;
     }
 
     void Draw(AttackRange range)
@@ -137,6 +191,7 @@ public class PlayerBattle : MonoBehaviour
     void OnDrawGizmos()
     {
         Draw(defaultAttack);
+        Draw(launchAttackRange);
     }
 
 }

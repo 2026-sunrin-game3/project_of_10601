@@ -4,7 +4,8 @@ public class PlayerAnimator : MonoBehaviour
 {
     Animator animator;
     PlayerStat stat;
-    public float direction;
+    [SerializeField] string launchAttackState = "LaunchAttack";
+    public float direction = 1f;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -41,5 +42,11 @@ public class PlayerAnimator : MonoBehaviour
     public void Play(string id)
     {
         animator.Play(id);
+    }
+
+    public void PlayLaunchAttack()
+    {
+        if (!string.IsNullOrWhiteSpace(launchAttackState))
+            animator.Play(launchAttackState);
     }
 }

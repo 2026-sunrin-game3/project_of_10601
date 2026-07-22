@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss : Enemy
 {
@@ -21,6 +22,8 @@ public class Boss : Enemy
     [SerializeField] AttackRange jumpAttack;
     float jumpCool;
 
+    [SerializeField] Slider bossbar;
+
     public float retreatTime = 0.6f;
     float retreatTimer;
 
@@ -36,6 +39,10 @@ public class Boss : Enemy
     // Update is called once per frame
     protected override void MobUpdate()
     {
+        bossbar.value = health.health / health.maxHealth;
+
+        
+
         if (dashCool > 0)
             dashCool -= Time.deltaTime;
         if (jumpCool > 0)
