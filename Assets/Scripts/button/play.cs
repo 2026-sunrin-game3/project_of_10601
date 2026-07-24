@@ -5,7 +5,6 @@ public class play : MonoBehaviour
 {
     public void scenechange()
     {
-        SceneManager.LoadScene("start");
+        SceneManager.LoadScene("story");
     }
-    
 }

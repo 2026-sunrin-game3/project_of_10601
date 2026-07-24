@@ -2,12 +2,12 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StoryImageSequence : MonoBehaviour
+public class StoryManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] storyObjects;
     [SerializeField] private float changeInterval = 2f;
 
-    [SerializeField] private string nextSceneName = "Base"; // 이동할 씬 이름
+    [SerializeField] private string nextSceneName = "SampleScene";
 
     private void Start()
     {
@@ -30,8 +30,7 @@ public class StoryImageSequence : MonoBehaviour
         // 마지막 컷 숨기기 (선택사항)
         HideAllObjects();
 
-        // 씬 이동
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(nextSceneName);
     }
 
     private void HideAllObjects()

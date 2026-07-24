@@ -27,10 +27,12 @@ public class DamageIndicator : MonoBehaviour
         }   
     }
 
-    public void indicateDamage(float damage, Vector2 pos, Color color)
+    public void indicateDamage(float damage, Vector2 pos, Color color, float sizeMultiplier = 1f)
     {
         DamageIndicator indicator = Instantiate(this, pos, Quaternion.identity);
         indicator.text.text = Mathf.Round(damage).ToString();
         indicator.text.color = color;
+        indicator.transform.localScale *= sizeMultiplier;
+        indicator.text.fontSize = Mathf.RoundToInt(indicator.text.fontSize * sizeMultiplier);
     }
 }

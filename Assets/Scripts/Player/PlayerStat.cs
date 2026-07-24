@@ -30,7 +30,7 @@ public class PlayerStat : MonoBehaviour
         new StatValue{Key="attackDamage", Value=3},
         new StatValue{Key="defense", Value=0},
         new StatValue{Key="increaseDamage", Value=0},
-        new StatValue{Key="critper", Value=30},
+        new StatValue{Key="critPer", Value=30},
         new StatValue{Key="critMul", Value=0},
         new StatValue{Key="hurtDamage", Value=0},
         new StatValue{Key="atkSpeed", Value=0},

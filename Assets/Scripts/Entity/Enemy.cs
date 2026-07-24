@@ -28,11 +28,18 @@ public abstract class Enemy : MonoBehaviour
 
     void OnHurt(EntityHealth.Context ctx)
     {
-        indicator.indicateDamage(ctx.damage, transform.position + new Vector3(Random.Range(-0.3f, 0.3f), 1), Color.orange);
+        Color color = ctx.isCritical ? Color.yellow : Color.orange;
+        indicator.indicateDamage(ctx.damage, transform.position + new Vector3(Random.Range(-0.3f, 0.3f), 1), color,
+            ctx.isCritical ? 1.55f : 1f);
     }
 
     void Update()
     {
+        if (health != null && health.IsStunned)
+        {
+            if (rigid != null) rigid.linearVelocity = Vector2.zero;
+            return;
+        }
         if (atkCool > 0)
             atkCool -= Time.deltaTime * (1 + stat.GetResultValue("atkSpeed") / 100);
             
@@ -85,11 +92,22 @@ public abstract class Enemy : MonoBehaviour
 
     public bool OnGround()
     {
-        Vector2 center = transform.position + Vector3.down * groundDist_ * 0.5f;
-        Vector2 size = new Vector3(0.3f, groundDist_);
-        Collider2D[] cast = Physics2D.OverlapBoxAll(center, size, 0f, groundMask_);
+        Collider2D bodyCollider = GetComponent<Collider2D>();
+        if (bodyCollider != null)
+        {
+            if (bodyCollider.IsTouchingLayers(groundMask_)) return true;
 
-        return cast.Length > 0;
+            Bounds bounds = bodyCollider.bounds;
+            Vector2 center = new Vector2(bounds.center.x, bounds.min.y - .04f);
+            Vector2 size = new Vector2(Mathf.Max(.25f, bounds.size.x * .65f), .12f);
+            Collider2D[] contacts = Physics2D.OverlapBoxAll(center, size, 0f, groundMask_);
+            foreach (Collider2D contact in contacts)
+                if (contact != null && contact != bodyCollider && !contact.isTrigger) return true;
+            return false;
+        }
+
+        Vector2 fallbackCenter = transform.position + Vector3.down * groundDist_ * .5f;
+        return Physics2D.OverlapBox(fallbackCenter, new Vector2(.3f, groundDist_), 0f, groundMask_) != null;
     }
 
     protected void Draw(AttackRange range)
